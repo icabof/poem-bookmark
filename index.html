@@ -1,169 +1,148 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>書籤詩句</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background: #ffffff;
-      font-family: "Noto Serif TC", serif;
-      color: #1f1f1f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    .poem-container {
-      max-width: 600px;
-      padding: 20px;
-      text-align: center;
-      overflow-y: auto;
-    }
-
-    .main-line {
-      font-size: 1.8rem;
-      font-weight: 700;
-      line-height: 1.5;
-      margin: 10px 0;
-    }
-
-    .context-line {
-      font-size: 1.05rem;
-      color: #4a4a4a;
-    }
-
-    .highlight {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #000;
-    }
-
-    .buttons {
-      margin-top: 20px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .shuffle {
-      padding: 8px 14px;
-      font-size: 0.9rem;
-      cursor: pointer;
-      border: none;
-      border-radius: 8px;
-      background: orange;
-      color: white;
-      font-weight: bold;
-    }
-
-    .btn-fb {
-      background: #1877f2;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 8px 14px;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-
-    .btn-ig {
-      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 8px 14px;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-
-    .btn-threads {
-      background: #000;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 8px 14px;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>信義區｜把生活改得更好一點</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+TC:wght@600;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap');
+:root{--ink:#142d40;--paper:#f6f0e2;--orange:#f5a832;--green:#79a88d;--red:#e66d4e;--blue:#c7dce1;--line:#d8cfbd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Maru Gothic","Noto Sans TC",sans-serif}
+a{color:inherit}.top{padding:15px 5vw;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.1em}.top b{font-weight:900}.top span{font-family:"DM Mono",monospace}
+.hero{position:relative;overflow:hidden;background:var(--ink);color:var(--paper);padding:clamp(30px,6vw,76px) 5vw 24px;min-height:540px}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#f6f0e21a 1px,transparent 1px);background-size:18px 18px;pointer-events:none}
+.hero-inner{position:relative;z-index:1;max-width:1120px;margin:auto}
+.eyebrow{color:var(--orange);font-size:13px;font-weight:900;letter-spacing:.12em}
+h1{font-family:"Noto Serif TC",serif;font-size:clamp(39px,7vw,82px);line-height:1.18;letter-spacing:-.045em;margin:24px 0 16px;font-weight:900}
+h1 .loose{color:var(--orange);display:inline-block;transform:rotate(-2deg);text-shadow:3px 3px 0 #9e641c}
+.subtitle{font-size:clamp(14px,2vw,18px);line-height:1.8;max-width:560px;color:#d8e1e3}
+.sticker{position:absolute;right:6%;top:50px;transform:rotate(8deg);background:var(--orange);color:var(--ink);padding:15px 20px 12px;border-radius:4px;box-shadow:5px 6px 0 #a66a21;font-family:"Noto Serif TC",serif;font-weight:900}.sticker strong{font-size:27px;display:block}.sticker small{font-family:"Zen Maru Gothic";font-size:11px}
+.art-wrap{max-width:1120px;margin:10px auto 0;position:relative;z-index:2}
+.art-note{font-size:12px;color:#d5e0e3;margin:3px 0 10px;letter-spacing:.05em}.art{width:100%;display:block;overflow:visible}
+.hotspot{cursor:pointer;outline:none}.hotspot .target{transition:transform .2s,filter .2s;transform-box:fill-box;transform-origin:center}.hotspot:hover .target,.hotspot:focus .target{transform:translateY(-5px) rotate(-2deg);filter:drop-shadow(0 5px 0 #f5a832)}.hotspot:focus-visible{outline:3px solid var(--orange)}
+main{max-width:1060px;margin:auto;padding:38px 5vw 65px}.intro{background:#eae2d1;padding:22px 24px;margin-bottom:42px;border-left:5px solid var(--green);position:relative}.intro:after{content:"✳";position:absolute;right:18px;top:12px;color:var(--red);font-size:28px;transform:rotate(15deg)}.intro b{font-family:"Noto Serif TC",serif;font-size:18px}.intro p{font-size:14px;line-height:1.85;margin:10px 0 0;color:#4e5e66}
+.section-head{display:flex;align-items:baseline;gap:14px;margin:0 0 18px}.section-head h2{font-family:"Noto Serif TC",serif;font-size:26px;margin:0;font-weight:900}.section-head .num{font-family:"DM Mono";color:var(--red);font-size:13px}
+.eligibility{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:10px}.pill{background:#fffdf7;border:1px solid var(--line);border-radius:99px;padding:9px 15px;font-weight:700;font-size:13px}.pill:before{content:"✳ ";color:var(--green)}.fine{font-size:12px;color:#68767a;line-height:1.7}
+.form-area{margin-top:42px}.form-card{border:1.5px solid var(--ink);background:#fffdf7;padding:clamp(18px,4vw,32px);box-shadow:7px 7px 0 var(--ink);position:relative}.form-card:before{content:"YOUR IDEA";font-family:"DM Mono";font-size:10px;letter-spacing:.2em;position:absolute;right:18px;top:-10px;background:var(--orange);padding:5px 8px;transform:rotate(2deg)}
+.form-intro{font-family:"Noto Serif TC",serif;font-size:20px;font-weight:900;margin:0 0 20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:7px}.full{grid-column:1/-1}label{font-weight:900;font-size:13px}input,select,textarea{width:100%;font:inherit;font-size:14px;padding:12px;border:1.5px solid #d5cbb9;background:#fff;border-radius:3px;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:2px solid var(--green);outline-offset:1px}textarea{min-height:95px;resize:vertical}.hint{font-size:11px;color:#7b8585}.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px}button{font:inherit;cursor:pointer;border:0}.send{background:var(--ink);color:var(--paper);font-weight:900;padding:14px 22px;transform:rotate(-1deg);box-shadow:4px 4px 0 var(--orange)}.send:hover{transform:rotate(0)}.plain{background:transparent;border:1px solid var(--line);padding:10px 14px;font-size:12px}.status{font-size:13px;font-weight:700;color:#427a5c;line-height:1.5}
+.examples{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:24px}.example{background:#eae2d1;padding:16px 15px;position:relative;min-height:100px}.example:nth-child(2){transform:rotate(1deg)}.example:nth-child(3){transform:rotate(-1deg)}.example b{display:block;font-family:"Noto Serif TC",serif;margin-bottom:7px}.example p{font-size:12px;line-height:1.7;margin:0}
+.submissions{margin-top:42px}.idea-list{display:grid;gap:12px}.idea{background:#fffdf7;border:1px solid var(--line);padding:16px;display:flex;justify-content:space-between;gap:12px}.idea h3{margin:0 0 6px;font-size:15px}.idea p{font-size:12px;line-height:1.7;color:#56666a;margin:0}.idea .date{font:10px "DM Mono";color:#88918e;margin-bottom:7px}.delete{background:transparent;border:1px solid #dfc6b5;color:#a45b40;padding:7px 9px;font-size:11px;height:max-content}
+.bottom-cta{margin-top:45px;background:var(--orange);padding:25px 27px;display:flex;justify-content:space-between;gap:20px;align-items:center;transform:rotate(-.3deg)}.bottom-cta h2{font-family:"Noto Serif TC";margin:0 0 8px;font-size:22px}.bottom-cta p{font-size:13px;line-height:1.8;margin:0}.tick{border-radius:50%;background:var(--ink);color:var(--orange);width:58px;height:58px;display:grid;place-items:center;font-size:35px;flex-shrink:0}
+footer{background:var(--ink);color:#e3e8e6;padding:22px 5vw;display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:12px}footer .phone{color:var(--orange);font-family:"Noto Serif TC";font-weight:900;font-size:20px}
+.modal{position:fixed;inset:0;background:#091b2bd9;z-index:10;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-box{width:min(540px,100%);background:var(--paper);padding:25px;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--orange);position:relative}.modal-box .close{position:absolute;right:12px;top:8px;font-size:26px;background:none}.modal-tag{font:11px "DM Mono";color:var(--red);letter-spacing:.15em}.modal-box h2{font-family:"Noto Serif TC";font-size:26px;margin:8px 0}.modal-box p{line-height:1.8;font-size:14px}.modal-box .spark{background:#e9e1cf;padding:13px;font-size:13px;line-height:1.8}
+@media(max-width:680px){.sticker{right:5%;top:auto;bottom:35px}.hero{padding-bottom:150px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.examples{grid-template-columns:1fr}.bottom-cta{align-items:flex-start}.top{font-size:10px}.idea{padding:12px}}
+</style>
 </head>
 <body>
-
-  <div class="poem-container">
-    <div class="context-line" id="preContext">000</div>
-    <div class="main-line" id="mainLine"></div>
-    <div class="context-line" id="postContext">000</div>
+<div class="top"><b>臺北市信義區參與式預算・提案徵集</b><span>FIELD NOTES / 2026</span></div>
+<header class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">你的日常，就是公共事務。</div>
+  <h1>你家門口的<br><span class="loose">人行道、公園</span><br>你決定怎麼改！</h1>
+  <p class="subtitle">一個小小的不方便，也值得被看見。<br>點一下插畫，看看你可以從哪裡開始提案。</p>
+  <div class="sticker"><strong>最高 300 萬</strong><small>每案最高補助經費</small></div>
+ </div>
+ <div class="art-wrap">
+  <div class="art-note">✳ 點擊插畫裡的物件，打開你的提案靈感</div>
+  <svg class="art" viewBox="0 0 1000 285" role="img" aria-label="可互動的街區插畫：路燈、長椅、樹、公園、行人道">
+   <path d="M0 230 Q160 208 310 230 T620 224 T1000 226 L1000 285 L0 285Z" fill="#27475a"/>
+   <path d="M0 247H1000" stroke="#a9bdc4" stroke-width="2" stroke-dasharray="14 12" opacity=".6"/>
+   <g class="hotspot" tabindex="0" role="button" aria-label="路燈提案靈感" data-topic="路燈／夜間照明">
+    <g class="target"><path d="M155 235V72" stroke="#c6d9df" stroke-width="7" stroke-linecap="round"/><path d="M155 72Q155 43 187 43H205" fill="none" stroke="#c6d9df" stroke-width="7" stroke-linecap="round"/><path d="M196 35Q218 34 222 51L209 64H188L180 51Z" fill="#f5a832"/><circle cx="201" cy="50" r="28" fill="#f5a832" opacity=".12"/></g>
+   </g>
+   <g class="hotspot" tabindex="0" role="button" aria-label="長椅提案靈感" data-topic="公園／休憩座椅">
+    <g class="target"><path d="M330 166H455M330 185H455M344 185V220M442 185V220" stroke="#c6d9df" stroke-width="8" stroke-linecap="round"/><path d="M330 166V155M455 166V155" stroke="#c6d9df" stroke-width="5"/></g>
+   </g>
+   <g class="hotspot" tabindex="0" role="button" aria-label="公園樹木提案靈感" data-topic="公園／綠美化">
+    <g class="target"><path d="M560 222V151" stroke="#c6d9df" stroke-width="10" stroke-linecap="round"/><path d="M560 64C521 64 512 97 524 117C490 130 504 173 537 168C552 194 594 187 602 161C634 155 638 118 604 105C608 76 582 56 560 64Z" fill="#79a88d"/><path d="M548 119Q560 102 577 120" stroke="#a9d0b7" stroke-width="4" fill="none"/></g>
+   </g>
+   <g class="hotspot" tabindex="0" role="button" aria-label="人行道提案靈感" data-topic="人行道／道路安全">
+    <g class="target"><path d="M690 230L750 150L810 230Z" fill="#c7dce1"/><path d="M720 230L750 189L780 230" fill="#f6f0e2"/><path d="M750 150V230" stroke="#142d40" stroke-width="3" stroke-dasharray="7 7"/><path d="M670 230H835" stroke="#f5a832" stroke-width="5"/></g>
+   </g>
+   <g class="hotspot" tabindex="0" role="button" aria-label="公共空間提案靈感" data-topic="其他公共設施">
+    <g class="target"><path d="M865 230V104H940V230" fill="none" stroke="#c6d9df" stroke-width="7"/><rect x="883" y="126" width="18" height="24" rx="8" fill="#f5a832"/><rect x="912" y="126" width="18" height="24" rx="8" fill="#79a88d"/><path d="M892 157V194M921 157V194" stroke="#c6d9df" stroke-width="8" stroke-linecap="round"/></g>
+   </g>
+   <text x="155" y="270" fill="#f6f0e2" font-size="13" text-anchor="middle" font-family="sans-serif">路燈</text><text x="390" y="270" fill="#f6f0e2" font-size="13" text-anchor="middle" font-family="sans-serif">長椅</text><text x="560" y="270" fill="#f6f0e2" font-size="13" text-anchor="middle" font-family="sans-serif">公園</text><text x="750" y="270" fill="#f6f0e2" font-size="13" text-anchor="middle" font-family="sans-serif">人行道</text><text x="900" y="270" fill="#f6f0e2" font-size="13" text-anchor="middle" font-family="sans-serif">公共空間</text>
+  </svg>
+ </div>
+</header>
+<main>
+ <div class="intro"><b>「我生活中的小問題，也可以提案嗎？」</b><p>可以！巷口路燈太暗、公園遊戲設施想更新、長者休閒空間需要更友善——只要能讓信義區公共生活更好，就是值得提出的點子。不需要複雜企劃，從你每天經過的地方開始。</p></div>
+ <section>
+  <div class="section-head"><span class="num">01 / WHO</span><h2>誰可以參加？</h2></div>
+  <div class="eligibility"><span class="pill">設籍信義區</span><span class="pill">居住信義區</span><span class="pill">在信義區上班</span><span class="pill">在信義區上學</span></div>
+  <p class="fine">符合以上任一條件，且年滿 16 歲即可參與。此網頁為提案想法收集／報名表，正式資格與流程請依主辦單位公告。</p>
+ </section>
+ <section class="form-area" id="formArea">
+  <div class="section-head"><span class="num">02 / YOUR IDEA</span><h2>把你的觀察寫下來</h2></div>
+  <div class="form-card">
+   <p class="form-intro">不用寫得完美。先讓一個想法落地。</p>
+   <form id="proposalForm">
+    <div class="grid">
+     <div class="field"><label for="name">姓名 *</label><input id="name" name="name" required autocomplete="name" placeholder="怎麼稱呼你？"></div>
+     <div class="field"><label for="contact">聯絡方式（電話或 Email）*</label><input id="contact" name="contact" required autocomplete="email" placeholder="方便主辦方聯繫的方式"></div>
+     <div class="field"><label for="eligibility">你符合哪一項參與條件？*</label><select id="eligibility" name="eligibility" required><option value="">請選擇</option><option>設籍信義區</option><option>居住信義區</option><option>在信義區上班</option><option>在信義區上學</option></select></div>
+     <div class="field"><label for="category">提案類別 *</label><select id="category" name="category" required><option value="">請選擇</option><option>人行道／道路安全</option><option>公園／遊戲設施</option><option>路燈／夜間照明</option><option>長者友善空間</option><option>環境整理／綠美化</option><option>其他公共設施</option></select></div>
+     <div class="field full"><label for="location">問題發生地點 *</label><input id="location" name="location" required placeholder="例如：某某路口、某座公園、附近地標"></div>
+     <div class="field full"><label for="problem">你觀察到什麼問題？*</label><textarea id="problem" name="problem" required maxlength="1000" placeholder="例如：人行道磚塊高低不平，推嬰兒車或輪椅經過很不方便。"></textarea></div>
+     <div class="field full"><label for="idea">你希望怎麼改善？*</label><textarea id="idea" name="idea" required maxlength="1000" placeholder="例如：修整路面，讓行人可以安全順暢通行。"></textarea><span class="hint">＊為必填欄位。請避免在描述中填寫不必要的個人敏感資訊。</span></div>
+    </div>
+    <div class="actions"><button class="send" type="submit" id="submitBtn">送出提案／報名 ↗</button><button class="plain" type="reset">清空欄位</button><span class="status" id="status" role="status"></span></div>
+   </form>
   </div>
-
-  <div class="buttons">
-    <button class="shuffle" id="shuffleBtn">換一首</button>
-    <button class="btn-fb" id="fbBtn">分享 FB</button>
-    <button class="btn-ig" id="igBtn">分享 IG</button>
-    <button class="btn-threads" id="threadsBtn">分享 Threads</button>
+  <div class="examples">
+   <div class="example"><b>✳ 路燈太暗？</b><p>記下晚上讓你不安心的巷弄位置，提出改善照明的想法。</p></div>
+   <div class="example"><b>✳ 公園不夠好用？</b><p>遊具老舊、座椅不足、缺少遮蔭，都可以成為觀察起點。</p></div>
+   <div class="example"><b>✳ 行人走得不安心？</b><p>人行道破損、動線被阻擋？描述問題與你期待的改變。</p></div>
   </div>
-
-  <script>
-    const poems = [
-      { main: `所謂時間的壓迫感/是我們太多的愛。` },
-      { main: `列車長來剪票了不知為什麼/他說了謝謝又說旅途愉快/而那正是我想對你說的` },
-      { main: `經驗已經總結出了千萬條，/我們的智慧從來沒有長進過。` },
-      { main: `所謂「想念」 /就是一種 永恆當機的狀態` },
-      { main: `望著窗外，只要想起一生中後悔的事/梅花便落滿了南山` },
-      { main: `除了人/現在我什麼都想冒充` },
-      { main: `寫「心」這個字/需要兩片完全相同的樹葉/和一塊手形的雲。` },
-      { main: `比浩浩的長風更遠的/是天邊的陰雲/比黯黯的陰雲更遠的/是樓上的眼睛` },
-      { main: `我不能/不願再說一句狠話//被你祝福過的每把刀子，此刻都搖搖晃晃……` },
-    ];
-
-    function formatWithSlash(text) {
-      return text
-        .split(/\/+/)
-        .map(s => s.trim())
-        .join('<br>');
-    }
-
-    function pickRandom(arr) {
-      return arr[Math.floor(Math.random() * arr.length)];
-    }
-
-    function renderPoem() {
-      const { main } = pickRandom(poems);
-      document.getElementById('mainLine').innerHTML = formatWithSlash(main);
-    }
-
-    renderPoem();
-    document.getElementById('shuffleBtn').addEventListener('click', renderPoem);
-
-    function getCurrentPoemText() {
-      return document.getElementById('preContext').innerText + "\n" +
-             document.getElementById('mainLine').innerText + "\n" +
-             document.getElementById('postContext').innerText;
-    }
-
-    document.getElementById('fbBtn').addEventListener('click', () => {
-      const text = encodeURIComponent(getCurrentPoemText());
-      const url = `https://www.facebook.com/sharer/sharer.php?u=${location.href}&quote=${text}`;
-      window.open(url, '_blank');
-    });
-
-    document.getElementById('igBtn').addEventListener('click', () => {
-      const text = encodeURIComponent(getCurrentPoemText());
-      alert("Instagram 不支援直接貼文分享，請手動貼上詩句：\n\n" + decodeURIComponent(text));
-      window.open("https://www.instagram.com/", "_blank");
-    });
-
-    document.getElementById('threadsBtn').addEventListener('click', () => {
-      const text = encodeURIComponent(getCurrentPoemText());
-      const url = `https://www.threads.net/intent/post?text=${text}`;
-      window.open(url, '_blank');
-    });
-  </script>
-</body>
-</html>
-
+ </section>
+ <section class="submissions">
+  <div class="section-head"><span class="num">03 / NOTES</span><h2>這台裝置上的草稿</h2></div>
+  <p class="fine">最近在此瀏覽器成功送出或暫存的內容會列在這裡。正式資料會提交至你設定的 Google 試算表。</p>
+  <div id="ideaList" class="idea-list"><p class="fine">目前尚無本機草稿。</p></div>
+ </section>
+ <div class="bottom-cta"><div><h2>先從一個小地方開始。</h2><p>拍下問題、記下地點、寫下想法。<br>讓生活裡的小小不方便，有機會成為改變的起點。</p></div><div class="tick">✓</div></div>
+</main>
+<footer><div><b>臺北市信義區公所</b><br><span style="font-size:10px;color:#aebfc9">經建課參與式預算業務</span></div><div class="phone">02-2723-9777 分機 704</div></footer>
+<div class="modal" id="ideaModal" aria-modal="true" role="dialog" aria-labelledby="modalTitle">
+ <div class="modal-box"><button class="close" id="closeModal" aria-label="關閉">×</button><div class="modal-tag">IDEA SPARK / 提案靈感</div><h2 id="modalTitle">想一想，這裡能怎麼變好？</h2><p id="modalText"></p><div class="spark" id="modalSpark"></div><div class="actions"><button class="send" id="useIdea">用這個方向開始提案 ↗</button></div></div>
+</div>
+<script>
+/* 將部署後的 Google Apps Script Web App URL 貼到下方設定。 */
+const SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const LOCAL_KEY="xinyiIdeasDrafts_v2";
+const sparks={
+ "路燈／夜間照明":["夜晚走這段路時，有哪裡太暗、看不清楚，或讓人不安心？","可以描述：燈光不足的路段、照明死角、希望增加或調整照明的位置。"],
+ "公園／休憩座椅":["公園裡有沒有一個地方，讓人想休息卻找不到座位？","可以觀察：座椅數量、遮蔭、設施老舊、不同年齡層是否都能使用。"],
+ "公園／綠美化":["這個空間能不能多一點綠意，或更舒服地停留？","可以觀察：樹蔭、植栽、整理維護、休閒空間的使用情形。"],
+ "人行道／道路安全":["從這裡走路，哪個地方最不順或最不安全？","可以觀察：路面高低差、行人空間、障礙物、路口動線。"],
+ "其他公共設施":["這個公共空間有什麼小問題，改善後會讓大家更方便？","想想：使用者是誰、問題在哪裡、希望公共空間怎麼改變。"]
+};
+const modal=document.getElementById("ideaModal");
+document.querySelectorAll(".hotspot").forEach(el=>{
+ const open=()=>{const topic=el.dataset.topic;const data=sparks[topic]||sparks["其他公共設施"];document.getElementById("modalTitle").textContent=topic+"：可以怎麼改善？";document.getElementById("modalText").textContent=data[0];document.getElementById("modalSpark").textContent=data[1];modal.classList.add("open");document.getElementById("useIdea").dataset.topic=topic;};
+ el.addEventListener("click",open);el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}});
+});
+document.getElementById("closeModal").addEventListener("click",()=>modal.classList.remove("open"));
+modal.addEventListener("click",e=>{if(e.target===modal)modal.classList.remove("open")});
+document.getElementById("useIdea").addEventListener("click",()=>{document.getElementById("category").value=document.getElementById("useIdea").dataset.topic;modal.classList.remove("open");document.getElementById("formArea").scrollIntoView({behavior:"smooth"});document.getElementById("location").focus({preventScroll:true});});
+function drafts(){try{return JSON.parse(localStorage.getItem(LOCAL_KEY)||"[]")}catch(e){return []}}
+function renderDrafts(){const host=document.getElementById("ideaList"),items=drafts();host.innerHTML="";if(!items.length){host.innerHTML='<p class="fine">目前尚無本機草稿。</p>';return;}items.slice().reverse().forEach((x,revIndex)=>{const i=items.length-1-revIndex;const card=document.createElement("article");card.className="idea";const content=document.createElement("div");const h=document.createElement("h3");h.textContent=x.category+"｜"+x.location;const date=document.createElement("div");date.className="date";date.textContent=x.date;const p=document.createElement("p");p.textContent="觀察："+x.problem+"　改善："+x.idea;content.append(h,date,p);const del=document.createElement("button");del.className="delete";del.textContent="刪除草稿";del.addEventListener("click",()=>{const all=drafts();all.splice(i,1);localStorage.setItem(LOCAL_KEY,JSON.stringify(all));renderDrafts()});card.append(content,del);host.append(card);});}
+const form=document.getElementById("proposalForm"),status=document.getElementById("status"),submitBtn=document.getElementById("submitBtn");
+form.addEventListener("submit",async e=>{
+ e.preventDefault();if(!form.reportValidity())return;
+ const data=Object.fromEntries(new FormData(form).entries());data.submittedAt=new Date().toISOString();data.date=new Date().toLocaleString("zh-TW");
+ submitBtn.disabled=true;submitBtn.textContent="正在送出…";status.textContent="";
+ const configured=SCRIPT_URL.startsWith("https://script.google.com/macros/s/")&&SCRIPT_URL.endsWith("/exec");
+ if(!configured){const all=drafts();all.push({...data,localOnly:true});localStorage.setItem(LOCAL_KEY,JSON.stringify(all));renderDrafts();status.textContent="尚未連接 Google 試算表：已先保存在這台裝置。請設定 Apps Script 網址後再正式送出。";submitBtn.disabled=false;submitBtn.textContent="送出提案／報名 ↗";return;}
+ try{
+  // GAS Web App accepts plain text JSON. no-cors prevents reading response body; request is submitted to endpoint.
+  await fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(data)});
+  const all=drafts();all.push({...data,localOnly:false});localStorage.setItem(LOCAL_KEY,JSON.stringify(all));renderDrafts();
+  status.textContent="送出請求已發出。由於 Google Apps Script 回應無法由此頁讀取，請由管理者確認試算表是否收到資料。";form.reset();
+ }catch(err){status.textContent="送出遇到問題。請確認網路與 Apps Script 部署設定；本次資料未確認送達。";}
+ finally{submitBtn.disabled=false;submitBtn.textContent="送出提案／報名 ↗";}
+});
+form.addEventListener("reset",()=>{status.textContent="欄位已清空。"});
+renderDrafts();
+</script>
+</body></html>
